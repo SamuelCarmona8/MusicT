@@ -2,13 +2,55 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>MusicT</title>
+  <title>MusicTripp</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+ 
+
 </head>
 <body>
-  <app-root>Loading...</app-root>
+  <app-root>Cargando...</app-root>
+  <h1> Inicio de Sesion</h1>
+  <button id="login"> 
+  		Inicia con google
+  </button>
+
+  <button id="guardar"> 
+  	Guardar
+  </button>
+
+  <div id="root"></div>
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCdsmtxSH01vIodMMmvz9SweV6HuS83kRI",
+    authDomain: "fir-crud-5742c.firebaseapp.com",
+    databaseURL: "https://fir-crud-5742c.firebaseio.com",
+    projectId: "fir-crud-5742c",
+    storageBucket: "fir-crud-5742c.appspot.com",
+    messagingSenderId: "595430566238"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<script src="app.js"></script>
+
+
 </body>
 </html>
