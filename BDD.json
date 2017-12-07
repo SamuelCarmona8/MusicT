@@ -1,0 +1,86 @@
+{
+  "BBB": "Nombre",
+  "Usuario": {
+    "IdUsuario": "int",
+    "User": "String",
+    "Nombre": "String",
+    "Contraseña": "String",
+    "MedioT": "String",
+    "Coordenadas": [
+      "x",
+      "y"
+    ]
+  },
+  "Playlist": {
+    "IdPlaylist": "int",
+    "Titulo": "String",
+    "Canciones": [
+      "IdCancion1",
+      "IDecancion2",
+      "n"
+    ],
+    "Duracion": "StringTime",
+    "Tematica": "String"
+  },
+  "Mapa": {
+    "IdMapa": "int",
+    "Titulo": "String",
+    "Canciones": [
+      {
+        "IdCancion1": "Coordenadas"
+      },
+      {
+        "IdCancion2": "Coordenadas"
+      },
+      {
+        "IdCancion3": "Coordenadas"
+      }
+    ],
+    "Genero": "String",
+    "Tematica": "String"
+  },
+  "ArtistaoBanda": {
+    "IdArtista": "int",
+    "Nombre": "String",
+    "Imagen": " png jpg",
+    "Sinopsis": "RolodeString",
+    "Pais": "String",
+    "ArtistasRelacionadosEmbebido": {
+      "1": "IdArtista",
+      "2": "IdArtista",
+      "3": "IdArtista"
+    }
+  },
+  "Album": {
+    "IdAlbum": "int",
+    "Titulo": "String",
+    "FechaLanzamiento": "Date",
+    "Compositores": {
+      "1": "IdArtista",
+      "2": "IdArtista"
+    },
+    "Canciones": [
+      "IdCancion",
+      "IdCancion",
+      "IdCancion"
+    ],
+    "Generos": {
+      "1": "String",
+      "2": "String"
+    }
+  },
+  "Cancion": {
+    "IdCancion": "int",
+    "Titulo": "String",
+    "Duracion": "algo",
+    "Genero": "String",
+    "Autor": "String",
+    "Album": "IdAlbum",
+    "Coordenadas": [
+      "x",
+      "y"
+    ],
+    "Lengua": "String",
+    "Archivo": "mp3flac"
+  }
+}
